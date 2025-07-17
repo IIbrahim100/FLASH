@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLASH – Smart Motion-Based Street Lighting</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="FLASH Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h1>FLASH – Smart Motion-Based Street Lighting</h1>
+      <p>Light where you need it. Darkness where you don’t.</p>
+      <div class="hero-animation" aria-label="Animated car and street lights"></div>
+      <a href="#how" class="cta">See How It Works</a>
+    </section>
+    <section id="about">
+      <h2>About the Project</h2>
+      <p>When a vehicle approaches, motion sensors detect it and automatically light up the next 20 meters of road. Lights behind the vehicle turn off to reduce unnecessary energy consumption.</p>
+      <div class="benefits">
+        <div class="benefit"><span class="icon">💡</span>Save energy</div>
+        <div class="benefit"><span class="icon">🌱</span>Reduce carbon emissions</div>
+        <div class="benefit"><span class="icon">🛡️</span>Improve night-time safety</div>
+        <div class="benefit"><span class="icon">🔧</span>Works with existing poles (retrofit design)</div>
+      </div>
+    </section>
+    <section id="step-by-step" class="step-section">
+      <h2>How FLASH Works: Step by Step</h2>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-visual" id="step1-visual"></div>
+          <div class="step-desc"><b>Step 1:</b> A car moves on the road</div>
+        </div>
+        <div class="step">
+          <div class="step-visual" id="step2-visual"></div>
+          <div class="step-desc"><b>Step 2:</b> When it reaches a specific pole (example: pole 4), the motion sensor detects the car</div>
+        </div>
+        <div class="step">
+          <div class="step-visual" id="step3-visual"></div>
+          <div class="step-desc"><b>Step 3:</b> Lights from pole 4 to pole 8 turn ON automatically</div>
+        </div>
+        <div class="step">
+          <div class="step-visual" id="step4-visual"></div>
+          <div class="step-desc"><b>Step 4:</b> Lights behind the car (poles 1 to 3) turn OFF</div>
+        </div>
+        <div class="step">
+          <div class="step-visual" id="step5-visual"></div>
+          <div class="step-desc"><b>Step 5:</b> The system always keeps 20 meters of light ahead of the vehicle</div>
+        </div>
+      </div>
+    </section>
+    <section id="smart-demo" class="smart-demo-section">
+      <h2>Smart Lighting Demo</h2>
+      <div class="smart-demo-animation" aria-label="Smart lighting interactive demo"></div>
+      <div class="smart-demo-controls">
+        <button id="move-car-btn" class="cta">Move Car</button>
+        <button id="replay-demo-btn" class="cta">Replay</button>
+        <button id="see-action-btn" class="cta">See in Action</button>
+      </div>
+      <div class="smart-demo-caption">As the vehicle moves, lights ahead turn ON and lights behind turn OFF — saving energy while keeping the road safe.</div>
+    </section>
+    <section id="how">
+      <h2>How It Works</h2>
+      <div class="how-animation" aria-label="Street lighting animation"></div>
+      <div class="how-infographic">
+        <!-- Infographic or fallback image/visual here -->
+      </div>
+    </section>
+    <!-- Interactive Demo Section -->
+    <section id="demo" class="demo-section">
+      <h2>Interactive Demo</h2>
+      <div class="demo-animation" aria-label="Interactive street lighting demo"></div>
+      <p class="demo-caption">Watch how FLASH lights up only where needed as the car moves!</p>
+    </section>
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator-section">
+      <h2>Live Energy & Cost Savings Calculator</h2>
+      <form id="savings-calculator">
+        <label>Number of Poles <input type="number" name="poles" min="1" max="100" value="8" required></label>
+        <label>Average Usage Hours/Day <input type="number" name="hours" min="1" max="24" value="10" required></label>
+        <label>Cost per kWh ($) <input type="number" name="cost" min="0.01" step="0.01" value="0.15" required></label>
+        <button type="submit">Calculate Savings</button>
+      </form>
+      <div id="calc-results" class="calc-results"></div>
+    </section>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Can this be installed on existing light poles?</button>
+          <div class="faq-answer">Yes, FLASH is designed as a retrofit solution for most existing street light poles.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What happens if a sensor fails?</button>
+          <div class="faq-answer">The system is designed with redundancy. If a sensor fails, the affected segment defaults to safe lighting mode until maintenance.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Does it support solar power?</button>
+          <div class="faq-answer">Yes, FLASH can be integrated with solar-powered street lights for even greater sustainability.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How much does one unit cost?</button>
+          <div class="faq-answer">Pricing depends on volume and configuration. Please contact us for a quote.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is it suitable for private compounds or public roads?</button>
+          <div class="faq-answer">FLASH is suitable for both private compounds and public roads, thanks to its flexible design.</div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog/Insights Section -->
+    <section id="blog" class="blog-section">
+      <h2>Insights & Blog</h2>
+      <div class="blog-list">
+        <article class="blog-post">
+          <h3>Energy-Saving Innovations</h3>
+          <p>Discover the latest breakthroughs in smart lighting and how FLASH is leading the way in energy efficiency.</p>
+        </article>
+        <article class="blog-post">
+          <h3>Smart Cities & IoT Lighting</h3>
+          <p>Learn how IoT and connected lighting systems are transforming urban environments for a smarter, safer future.</p>
+        </article>
+        <article class="blog-post">
+          <h3>Environmental Impact of Over-Lighting</h3>
+          <p>Understand the effects of light pollution and how adaptive lighting like FLASH can help restore the night sky.</p>
+        </article>
+      </div>
+    </section>
+    <!-- Downloadable Pitch CTA -->
+    <section class="download-section">
+      <a href="FLASH-pitch.pdf" download class="cta download-brochure">Download Full PDF Pitch</a>
+    </section>
+    <!-- Contact Section (existing) -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <div class="form-options">
+          <label><input type="checkbox" name="demo"> Request a demo</label>
+          <a href="FLASH-pitch.pdf" download class="download-pdf">Download PDF Pitch</a>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <!-- Demo Request Form -->
+    <section id="demo-request" class="demo-request-section">
+      <h2>Request a Demo</h2>
+      <form id="demo-request-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="organization" placeholder="Organization" required>
+        <textarea name="notes" placeholder="Message / Notes"></textarea>
+        <button type="submit">Request Demo</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-left">
+      <img src="logo.png" alt="FLASH Logo" class="footer-logo">
+    </div>
+    <div class="footer-center">
+      <span class="social-icons">
+        <a href="#" aria-label="LinkedIn">🔗</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </span>
+      <span class="sustainability-badge" title="Sustainable Project">♻️</span>
+    </div>
+    <div class="footer-right">
+      &copy; 2024 FLASH. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
