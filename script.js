@@ -164,9 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Move car
       const carGroup = svg.getElementById('car-group');
       carGroup.setAttribute('transform', `translate(${carX},0)`);
-      // Move headlight
+      // Move headlight (FIX: remove carX offset, keep points relative to car)
       const headlight = svg.getElementById('car-headlight');
-      headlight.setAttribute('points', `${48+carX},68 ${68+carX},72 ${68+carX},78 ${48+carX},78`);
+      headlight.setAttribute('points', `48,68 68,72 68,78 48,78`);
       // Lights logic: turn ON lights ahead of car, OFF behind
       for (let i = 1; i <= poleCount; i++) {
         const lamp = svg.getElementById('lamp'+i);
